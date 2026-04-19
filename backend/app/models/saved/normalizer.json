@@ -1,0 +1,38 @@
+{
+  "batter_params": {
+    "L": {
+      "barrel_pct": {"mean": 0.0798, "std": 0.0414},
+      "hard_hit_pct": {"mean": 0.3898, "std": 0.0767},
+      "avg_ev": {"mean": 88.81, "std": 2.224},
+      "max_ev": {"mean": 110.64, "std": 2.955},
+      "avg_launch_angle": {"mean": 12.0, "std": 5.5},
+      "sweet_spot_pct": {"mean": 0.3367, "std": 0.0401}
+    },
+    "R": {
+      "barrel_pct": {"mean": 0.0798, "std": 0.0414},
+      "hard_hit_pct": {"mean": 0.3898, "std": 0.0767},
+      "avg_ev": {"mean": 88.81, "std": 2.224},
+      "max_ev": {"mean": 110.64, "std": 2.955},
+      "avg_launch_angle": {"mean": 12.0, "std": 5.5},
+      "sweet_spot_pct": {"mean": 0.3367, "std": 0.0401}
+    }
+  },
+  "pitcher_params": {
+    "L": {
+      "hr_per_9": {"mean": 1.25, "std": 0.55},
+      "hr_fb_pct": {"mean": 0.115, "std": 0.045},
+      "barrel_pct_allowed": {"mean": 0.0781, "std": 0.0228},
+      "hard_hit_pct_allowed": {"mean": 0.355, "std": 0.050},
+      "xslg_against": {"mean": 0.4055, "std": 0.0586},
+      "xwoba_against": {"mean": 0.3157, "std": 0.0321}
+    },
+    "R": {
+      "hr_per_9": {"mean": 1.25, "std": 0.55},
+      "hr_fb_pct": {"mean": 0.115, "std": 0.045},
+      "barrel_pct_allowed": {"mean": 0.0781, "std": 0.0228},
+      "hard_hit_pct_allowed": {"mean": 0.355, "std": 0.050},
+      "xslg_against": {"mean": 0.4055, "std": 0.0586},
+      "xwoba_against": {"mean": 0.3157, "std": 0.0321}
+    }
+  }
+}

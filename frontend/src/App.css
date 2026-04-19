@@ -1,0 +1,350 @@
+/* === Layout === */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #e0e0e0;
+  background: #0d1117;
+  min-height: 100vh;
+}
+
+.app-header {
+  text-align: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #21262d;
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  color: #f0f6fc;
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  color: #8b949e;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  color: #484f58;
+  font-size: 0.75rem;
+  border-top: 1px solid #21262d;
+  margin-top: 2rem;
+}
+
+.app-footer p {
+  margin: 0.25rem 0;
+}
+
+/* === Date Picker === */
+.date-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.date-picker label {
+  font-weight: 600;
+  color: #c9d1d9;
+}
+
+.date-picker input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #161b22;
+  color: #c9d1d9;
+  font-size: 1rem;
+}
+
+.loading-indicator {
+  color: #58a6ff;
+  font-size: 0.85rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* === Error / Empty === */
+.error-banner {
+  background: #3d1f28;
+  border: 1px solid #f85149;
+  color: #f85149;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.empty-state {
+  text-align: center;
+  color: #8b949e;
+  padding: 3rem 0;
+  font-size: 1.1rem;
+}
+
+/* === Game Section === */
+.game-section {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* === Game Header === */
+.game-header {
+  padding: 1rem 1.25rem;
+  background: #1c2128;
+  border-bottom: 1px solid #21262d;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.matchup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.matchup .team {
+  color: #f0f6fc;
+}
+
+.matchup .at {
+  color: #484f58;
+  font-weight: 400;
+}
+
+.game-details {
+  flex: 1;
+}
+
+.game-details .venue {
+  color: #8b949e;
+  font-size: 0.85rem;
+  display: block;
+}
+
+.game-details .pitchers {
+  color: #c9d1d9;
+  font-size: 0.9rem;
+}
+
+.game-conditions {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: #8b949e;
+}
+
+.game-conditions span {
+  padding: 0.2rem 0.5rem;
+  background: #0d1117;
+  border-radius: 4px;
+}
+
+.env-score.favorable {
+  color: #3fb950;
+  border: 1px solid #238636;
+}
+
+.env-score.unfavorable {
+  color: #f85149;
+  border: 1px solid #da3633;
+}
+
+/* === Teams Grid === */
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 0;
+}
+
+/* === Team Card === */
+.team-card {
+  border-right: 1px solid #21262d;
+}
+
+.team-card:last-child {
+  border-right: none;
+}
+
+.team-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background: #1c2128;
+  border-bottom: 1px solid #21262d;
+}
+
+.team-card-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #58a6ff;
+}
+
+.team-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #8b949e;
+}
+
+.team-expected {
+  color: #d2a8ff;
+}
+
+/* === Batter Row === */
+.batter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border-bottom: 1px solid #21262d;
+  font-size: 0.85rem;
+  transition: background 0.15s;
+}
+
+.batter-row:hover {
+  background: #1c2128;
+}
+
+.batter-row:last-child {
+  border-bottom: none;
+}
+
+.rank {
+  color: #484f58;
+  font-size: 0.75rem;
+  width: 1.75rem;
+  text-align: center;
+}
+
+.batter-name {
+  font-weight: 600;
+  color: #f0f6fc;
+  min-width: 130px;
+}
+
+.position {
+  color: #484f58;
+  font-size: 0.75rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.team-badge {
+  background: #21262d;
+  color: #8b949e;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.vs-pitcher {
+  color: #8b949e;
+  font-size: 0.8rem;
+  min-width: 120px;
+}
+
+.probability {
+  font-weight: 700;
+  color: #3fb950;
+  min-width: 3.5rem;
+  text-align: right;
+}
+
+.prob-bar {
+  width: 80px;
+  height: 6px;
+  background: #21262d;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.prob-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #238636, #3fb950);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.scores {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  color: #484f58;
+}
+
+.confidence-badge {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.confidence-badge.confidence-high {
+  background: #0e3a1e;
+  color: #3fb950;
+}
+
+.confidence-badge.confidence-medium {
+  background: #2d1f00;
+  color: #d29922;
+}
+
+.confidence-badge.confidence-low {
+  background: #3d1f28;
+  color: #f85149;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .game-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    border-right: none;
+    border-bottom: 1px solid #21262d;
+  }
+
+  .batter-row {
+    flex-wrap: wrap;
+  }
+
+  .vs-pitcher {
+    display: none;
+  }
+
+  .scores {
+    display: none;
+  }
+}
